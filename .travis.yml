@@ -1,2 +1,4 @@
 language: csharp
 solution: ApiGateway.sln
+install:
+  - dotnet restore
