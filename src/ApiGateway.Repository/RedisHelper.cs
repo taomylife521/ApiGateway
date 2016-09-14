@@ -65,6 +65,7 @@ namespace ApiGateway.Repository
     {
         public const string Api = "api:{0}";
         public const string User = "user:{0}";
+        public const string IPBlacklist = "ipblacklist";
     }
 
     public static class CacheHelper
