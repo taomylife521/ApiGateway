@@ -46,6 +46,8 @@ namespace ApiGateway
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            Policy.Parse(Configuration.GetSection("Policy"));
+
             app.UseMvc();
         }
     }
